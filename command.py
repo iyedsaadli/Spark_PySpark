@@ -15,3 +15,13 @@ print(sc)
 	PySpark_command
 #returns the names of all the tables in the cluster as a list.
 sc.catalog.listTables()
+
+# RUN SQL QUERY
+
+query = "FROM Table SELECT * LIMIT 10"
+
+# Get the first 10 rows of the table
+first10 = spark.sql(query)
+
+# Show the results
+first10.show()
