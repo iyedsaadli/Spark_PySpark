@@ -13,3 +13,5 @@ print(sc)
 	local[*]
 	AppName
 	PySpark_command
+#returns the names of all the tables in the cluster as a list.
+sc.catalog.listTables()
